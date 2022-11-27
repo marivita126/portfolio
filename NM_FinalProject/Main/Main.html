@@ -9,38 +9,71 @@
         *{box-sizing: border-box;}
         html{
             font-family: Arial;
-            margin: 0px;
-            padding: 0px;
-            font-size: 16px;
-        }
-        body{
-            /* position: relative; */
 
             margin: 0px;
             padding: 0px;
+            font-size: 16px;
+            height: 100%;
+        }
+        body{
+            /* position: relative; */
+            overflow-x: auto;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            
         }
         #main{
             background-color: skyblue;
-            /* overflow-x: scroll;
-            overflow-y: hidden; */
-            overflow: auto;
-            white-space: nowrap;
+
+            /* width: 100%; */
+            width: auto;
+            height: 100%;
+
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
         }
-        #intro, #first{
+        #mainImg img{
+            width: 100%;
+            height: 100%
+        }
+        #intro, #first, #second, #third, #end{
             display: inline-block;
-            padding: 500px;
-            background-color: bisque;
+            flex: 0 0 auto;
+            width: 100%;
+            /* padding: 300px 500px; */
+            /* overflow: auto; */
+            padding: 220px 300px;
+
+
             text-align: center;
+
+            /* 마우스 스크롤하게 하려면 자바스크립트 사용해야함 */
         }
+        #intro, #end{background-color: rgb(255, 245, 234);}
+        #first, #second, #third{background-color: rgb(141, 141, 237);}
+
     </style>
 </head>
 <body>
     <div id="main">
         <div id="intro">
-            My Website
+            <div id="mainImg">
+                <img src="Images/mainPage_name.png" title="name">
+            </div>
         </div>
         <div id="first">
-            First Section
+            Rain Cat
+        </div>
+        <div id="second">
+            Little Prince
+        </div>
+        <div id="third">
+            Little Prince
+        </div>
+        <div id="end">
+            Bye
         </div>
     </div>
 </body>
