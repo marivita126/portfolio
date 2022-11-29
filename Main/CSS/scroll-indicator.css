@@ -1,0 +1,9 @@
+.scroll-indicator {
+	position:fixed;
+	left:0;
+	top:10px;
+	height:3px;
+    background:blue;
+    width:20px;
+    min-width:20px;
+}

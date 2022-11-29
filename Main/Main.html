@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font-face.css">
+    <link rel="stylesheet" href="CSS/font-face.css">
+    <!-- <link rel="stylesheet" href="CSS/scroll-indicator.css"> -->
     <title>Main Page</title>
     <style>
-
-
         *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
 
-
         html{
             font-family: 'S-CoreDream-3Light';
+            scroll-behavior: smooth;
             font-size: 16px;
             height: 100%;
         }
@@ -42,19 +41,33 @@
         }
 
 
+        #scroll-indicator{
+            position: fixed;
+            bottom: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            
+        }
+
+
         /* main(전체) 안에 들어가는 모든 섹션 레이아웃 설정 */
         #intro, #first, #second, #third, #end{
             display: inline-block;
             flex: 0 0 auto;
-            width: 100%;
             text-align: center;
 
             /* 마우스 스크롤하게 하려면 자바스크립트 사용해야함 */
         }
 
+        /* 처음 Intro, 끝 end 섹션 너비 설정 */
+        #intro, #end{width: 100%;}
+        /* 중간 섹션 너비 설정 */
+        #first, #second, #third{width: 100%; height: 100%;}
+
         /* 패딩 설정 */
         #intro{padding: 185px 300px;}
-        #first, #second, #third{padding: 180px 400px;}
+        #first, #second, #third{padding: 150px 350px;}
 
         /* 섹션별 이미지 호버*/
         .topImg{
@@ -81,7 +94,7 @@
         }
         .topImg img, .hoverImg img{
             width: 100%;
-            height: 100%;
+            height: 98.8%;
         }
 
 
@@ -95,7 +108,20 @@
     </style>
 </head>
 <body>
+    <!-- 자바스크립트 불러오기 -->
+    <!-- <script src="Javascript/mainScript.js"></script> -->
+    
+
     <div id="main">
+        <!-- <div id="scroll-indicator" class="scroll-indicator"></div> -->
+
+        <div id="scroll-indicator">
+            <div class="shortcut"><a href="#intro">To intro</a></div>
+            <div class="shortcut"><a href="#first">First</a></div>
+            <div class="shortcut"><a href="#second">Second</a></div>
+            <div class="shortcut"><a href="#third">Third</a></div>
+            <div class="shortcut"><a href="#end">End</a></div>
+        </div>
 
         <div id="intro">
             <div class="mainImg">
@@ -117,20 +143,20 @@
                 <img class="hoverImg" src="Images/page2_2.png">
             </div>
 
-            <!-- <div class="content">
-                <img class="topImg" src="Images/page2_1.png" title="name"></img>
-                <img class="hoverImg" src="Images/page2_2.png">
-            </div> -->
-
             <div class="sectionText">#개인_프로젝트 #1인_게임개발</div>
         </div>
 
         <div id="third">
-            Little Prince
+            <div class="topImg" >
+                <img src="Images/page3_1.png" title="Little Prince: Immersive Space">
+                <img class="hoverImg" src="Images/page3_2.png">
+            </div>
+
+            <div class="sectionText">#팀_프로젝트 #가상공간 #프로그래밍</div>
         </div>
 
         <div id="end">
-            Bye
+            <a href="https://www.instagram.com/yeee_records/">Instagram</a>
         </div>
 
     </div>
