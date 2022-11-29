@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-face.css">
     <title>Main Page</title>
     <style>
-        *{box-sizing: border-box;}
-        html{
-            font-family: Arial;
 
+
+        *{
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+        html{
+            font-family: 'S-CoreDream-3Light';
             font-size: 16px;
             height: 100%;
         }
+
         body{
             /* position: relative; */
             overflow-x: auto;
-            margin: 0px;
-            padding: 0px;
             height: 100%;
-            
         }
+
+
+        /* 전체를 감 쌈 */
         #main{
             background-color: skyblue;
 
-            /* width: 100%; */
             width: auto;
             height: 100%;
 
@@ -34,47 +40,99 @@
             flex-wrap: nowrap;
             justify-content: flex-start;
         }
-        #mainImg img{
-            width: 100%;
-            height: 100%
-        }
+
+
+        /* main(전체) 안에 들어가는 모든 섹션 레이아웃 설정 */
         #intro, #first, #second, #third, #end{
             display: inline-block;
             flex: 0 0 auto;
             width: 100%;
-            /* padding: 300px 500px; */
-            /* overflow: auto; */
-            padding: 220px 300px;
-
-
             text-align: center;
 
             /* 마우스 스크롤하게 하려면 자바스크립트 사용해야함 */
         }
-        #intro, #end{background-color: rgb(255, 245, 234);}
-        #first, #second, #third{background-color: rgb(141, 141, 237);}
+
+        /* 패딩 설정 */
+        #intro{padding: 185px 300px;}
+        #first, #second, #third{padding: 180px 400px;}
+
+        /* 섹션별 이미지 호버*/
+        .topImg{
+            position: relative;
+        }
+        .hoverImg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+        .hoverImg:hover{
+            opacity: 1;
+        }
+
+        .sectionText{color:rgb(56, 56, 176);}
+
+
+        /* 모든 이미지 크기 조절 */
+        .mainImg img{
+            width: 100%;
+            height: 100%;
+        }
+        .topImg img, .hoverImg img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        /* 섹션별 색 지정 */
+        #intro, #end{background-color: rgb(255, 242, 218);}
+        #intro{border: 15px solid white;}
+        #first, #second, #third{background-color: rgb(255, 255, 255);}
 
     </style>
 </head>
 <body>
     <div id="main">
+
         <div id="intro">
-            <div id="mainImg">
+            <div class="mainImg">
                 <img src="Images/mainPage_name.png" title="name">
             </div>
         </div>
+
         <div id="first">
-            Rain Cat
+            <div class="topImg" >
+                <img src="Images/page1_1.png" title="DreamCatcher">
+                <img class="hoverImg" src="Images/page1_2.png">
+            </div>
+            <div class="sectionText">#첫_게임개발_프로젝트 #배경_원화 #UIUX</div>
         </div>
+
         <div id="second">
-            Little Prince
+            <div class="topImg" >
+                <img src="Images/page2_1.png" title="DreamCatcher">
+                <img class="hoverImg" src="Images/page2_2.png">
+            </div>
+
+            <!-- <div class="content">
+                <img class="topImg" src="Images/page2_1.png" title="name"></img>
+                <img class="hoverImg" src="Images/page2_2.png">
+            </div> -->
+
+            <div class="sectionText">#개인_프로젝트 #1인_게임개발</div>
         </div>
+
         <div id="third">
             Little Prince
         </div>
+
         <div id="end">
             Bye
         </div>
+
     </div>
 </body>
 </html>
