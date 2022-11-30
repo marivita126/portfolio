@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
-    <style>
-        *{box-sizing: border-box;}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamCatcher</title>
+<link rel="stylesheet" href="CSS/sub-default.css">
+<link rel="stylesheet" href="CSS/home-link.css">
+<style>
 
-        html{
-        font-family: Arial;
-        margin: 0;
-        font-size: 16px;
-        }
+  .navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+  }
 
-        .navigation{
-            display: flex;
-            justify-content: space-around;
-        }
+  .nav_link{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.881);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
 
-        .nav_link{
-            display: block;
-            background-color: black;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1.2rem;
+    padding: 8px 20px;
+    width:100%
+  }
 
-            padding: 14px 20px;
-            width:100%
-        }
+  .nav_link:hover{
+    transition: background-color 0.5s;
+    background-color: rgba(0, 0, 0, 0.966);
+    color: white;
+  }
 
-        .nav_link:hover{
-        background-color: lightgray;
-        color: black;
-        }
-
-        .container p{
-        font-size: 1.2rem;
-        }
-        
-        .container span{
-        font-weight: bold;
-        color: navy;
-        }
+  .container p{
+    font-size: 1.2rem;
+  }
+  
+  .container span{
+    font-weight: bold;
+    color: navy;
+  }
 
 
-        .side{
-        background-color: lightgrey;
+  .side{
+    background-color: lightgrey;
 
-        width: 30%;
-        height: 1650px;
-        padding: 20px;
-        }
+    width: 30%;
+    height: 1650px;
+    padding: 20px;
+  }
 
-        /* Main column on the right, 70% width, padding 20px */
-        .main{
-        float: right;
-        width: 70%;
-        height: 100%;
-        padding: 20px;
-        }
-        .img1 img, .img2 img, .img3 img, .img4 img{
-        width: 100%;
-        }
+  /* Main column on the right, 70% width, padding 20px */
+  .main{
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+  }
+  .img1 img, .img2 img, .img3 img, .img4 img{
+    width: 100%;
+  }
 
 
-        /* Footer */
-        .footer {
-        clear: both;
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-        /*font size is 1.5 times html font-size*/
-        }
-    </style>
+  /* Footer */
+  .footer {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    /*font size is 1.5 times html font-size*/
+  }
+  </style>
 </head>
 <body>
-    <div class="navigation">
-        <div class="nav_link">Link1</div>
-        <div class="nav_link">Link2</div>
-        <div class="nav_link">Link3</div>
-        <div class="nav_link">Link4</div>
-    </div>
+  <div class="navigation">
+      <div class="nav_link">Link1</div>
+      <div class="nav_link">Link2</div>
+      <div class="nav_link">Link3</div>
+      <div class="nav_link">Link4</div>
+  </div>
+
+  <div id="home"><a href="../Main/Main.html">Home</a></div>
 
 
-    <div class="container">
-        <div class="first">
-          <h2>Heading 2</h2>
-          <h5>Title description</h5>
-          <!--external source image from internet, set width 100%-->
-          <div class="img1">
-            <img src="https://storage.googleapis.com/oceanwide_web/media-dynamic/cache/widen_1600/media/default/0001/05/30627f237982b80399f5d2db0c8daeeea38a5950.jpeg"
-            title="Image 1">
-          </div>
-          
-          <p>Some text qui <span>officia deserunt mollit</span> anim..</p> 
-          <!--some bold navy text inside p, doesn't matter which texts-->
+  <div class="container">
+      <div class="first">
+        <h2>Heading 2</h2>
+        <h5>Title description</h5>
+        <!--external source image from internet, set width 100%-->
+        <div class="img1">
+          <img src="https://storage.googleapis.com/oceanwide_web/media-dynamic/cache/widen_1600/media/default/0001/05/30627f237982b80399f5d2db0c8daeeea38a5950.jpeg"
+          title="Image 1">
         </div>
-        <div class="second">
-          <h3>More Text</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <!--external source image from internet, set width 100%-->
-          <div class="img2">
-            <img src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg"
-            title="Image 2">
-          </div>
+        
+        <p>Some text qui <span>officia deserunt mollit</span> anim..</p> 
+        <!--some bold navy text inside p, doesn't matter which texts-->
+      </div>
+      <div class="second">
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <!--external source image from internet, set width 100%-->
+        <div class="img2">
+          <img src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg"
+          title="Image 2">
         </div>
-    </div>
-    
-    <div class="footer"><h2>Footer</h2></div>
+      </div>
+  </div>
+  
+  <div class="footer"><h2>Footer</h2></div>
 </body>
 </html>

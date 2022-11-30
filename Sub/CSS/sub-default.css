@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'S-CoreDream-3Light';
+    scroll-behavior: smooth;
+    font-size: 16px;
+}

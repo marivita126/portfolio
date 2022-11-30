@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/font-face.css">
     <link rel="stylesheet" href="CSS/hoverImg.css">
-    <link rel="stylesheet" href="CSS/scroll-indicator.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main-end-text.css">
     <title>Main Page</title>
     <style>
         *{
@@ -19,14 +20,11 @@
             font-family: 'S-CoreDream-3Light';
             scroll-behavior: smooth;
             font-size: 16px;
-            height: 100%;
         }
 
         body{
-            /* position: relative; */
             height: 100vh;
-            overflow-y: hidden;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
 
@@ -38,17 +36,17 @@
         }
 
 
+
+
+
         /* main(전체) 안에 들어가는 모든 섹션 레이아웃 설정 */
         #intro, .section, #end{
-            /* display: inline-block; */
+            display: inline-block;
             flex: 0 0 auto;
-            text-align: center;
-
-
             width: 100%; height: 100%;
-
-            /* 마우스 스크롤하게 하려면 자바스크립트 사용해야함 */
         }
+        #intro, .section{text-align: center;}
+        #end{text-align: left;}
 
 
         /* 패딩 설정 */
@@ -78,21 +76,73 @@
     </style>
 </head>
 <body>
-    <!-- 자바스크립트 불러오기 -->
-    <!-- <script src="Javascript/horizontalScroll.js"></script> -->
+    <script src="Javascript/horizontalScroll.js"></script>
+
     
-    <div id="scroll-indicator">
-        <div class="shortcut"><a href="#intro"><img src="Images/shortcut.png" title="To intro"></a></div>
-        <div class="shortcut"><a href="#first"><img src="Images/shortcut.png" title="First"></a></div>
-        <div class="shortcut"><a href="#second"><img src="Images/shortcut.png" title="Second"></a></div>
-        <div class="shortcut"><a href="#third"><img src="Images/shortcut.png" title="Third"></a></div>
-        <div class="shortcut"><a href="#end"><img src="Images/shortcut.png" title="End"></a></div>
+    <div id="nav">
+        <!-- <div class="icon-box">
+            <div class="side-text">Home</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div>
+        <div class="icon-box">
+            <div class="side-text">DreamCatcher</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div>
+        <div class="icon-box">
+            <div class="side-text">Rain Cat</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div>
+        <div class="icon-box">
+            <div class="side-text">Little Prince</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div> -->
+        <!-- <div class="shortcut shortcut_1">
+            <div class="navTag tag_1"><img src="Images/tag_Home.png"></div>
+            <a href="#intro"><img src="Images/shortcut.png" title="To intro"></a>
+        </div>
+        <div class="shortcut shortcut_2">
+            <div class="navTag tag_2"><img src="Images/tag_DreamCatcher.png"></div>
+            <a href="#first"><img src="Images/shortcut.png" title="First"></a> 
+        </div>
+        <div class="shortcut shortcut_3">
+            <div class="navTag tag_3"><img src="Images/tag_RainCat.png"></div>
+            <a href="#second"><img src="Images/shortcut.png" title="Second"></a>
+        </div>
+        <div class="shortcut shortcut_4">
+            <div class="navTag tag_4"><img src="Images/tag_LittlePrince.png"></div>
+            <a href="#third"><img src="Images/shortcut.png" title="Third"></a>
+        </div>
+        <div class="shortcut shortcut_5">
+            <div class="navTag tag_5"><img src="Images/tag_Contact.png"></div>
+            <a href="#end"><img src="Images/shortcut.png" title="End"></a>
+        </div> -->
+
+        <div class="shortcut">
+            <div class="navTag"><img src="Images/tag_Home.png"></div>
+            <div class="navImg"><a href="#intro"><img src="Images/shortcut.png" title="To intro"></a></div>
+        </div>
+        <div class="shortcut">
+            <div class="navTag tag_2"><img src="Images/tag_DreamCatcher.png"></div>
+            <div class="navImg"><a href="#first"><img src="Images/shortcut.png" title="First"></a> </div>
+        </div>
+        <div class="shortcut">
+            <div class="navTag"><img src="Images/tag_RainCat.png"></div>
+            <div class="navImg"><a href="#second"><img src="Images/shortcut.png" title="Second"></a></div>
+        </div>
+        <div class="shortcut">
+            <div class="navTag"><img src="Images/tag_LittlePrince.png"></div>
+            <div class="navImg"><a href="#third"><img src="Images/shortcut.png" title="Third"></a></div>
+        </div>
+        <div class="shortcut">
+            <div class="navTag"><img src="Images/tag_Contact.png"></div>
+            <div class="navImg"><a href="#end"><img src="Images/shortcut.png" title="End"></a></div>
+        </div>
     </div>
 
+
+
+
     <div id="wrapper">
-
-
-
         <div id="intro">
             <div class="mainImg">
                 <img src="Images/mainPage_name.png" title="name">
@@ -102,7 +152,7 @@
         <div id="first" class="section">
             <div class="topImg" >
                 <img src="Images/page1_1.png" title="DreamCatcher">
-                <img class="hoverImg" src="Images/page1_2.png">
+                <a href="../Sub/01.html"><img class="hoverImg" src="Images/page1_2.png"></a>
             </div>
             <div class="sectionText">#첫_게임개발_프로젝트 #배경_원화 #UIUX</div>
         </div>
@@ -126,8 +176,9 @@
         </div>
 
         <div id="end">
-            <div>CONTACT</div>
+            <div class="title">CONTACT</div>
             <a href="https://www.instagram.com/yeee_records/">Instagram</a>
+            <div class="text">FOLLOW ME ON 으어ㅓ어어어어</div>
         </div>
 
     </div>

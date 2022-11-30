@@ -1,0 +1,8 @@
+#home{
+    position: fixed;
+    top: 70px; right: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
