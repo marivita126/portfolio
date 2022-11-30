@@ -1,0 +1,11 @@
+#nav{
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
+}
+.shortcut{text-align: center;}
+.shortcut img{
+    width: 10%;
+}

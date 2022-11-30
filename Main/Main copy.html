@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/font-face.css">
     <link rel="stylesheet" href="CSS/hoverImg.css">
-    <link rel="stylesheet" href="CSS/scroll-indicator.css">
+    <link rel="stylesheet" href="CSS/nav_new.css">
     <title>Main Page</title>
     <style>
         *{
@@ -19,14 +19,11 @@
             font-family: 'S-CoreDream-3Light';
             scroll-behavior: smooth;
             font-size: 16px;
-            height: 100%;
         }
 
         body{
-            /* position: relative; */
             height: 100vh;
-            overflow-y: hidden;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
 
@@ -38,16 +35,15 @@
         }
 
 
+
+
+
         /* main(전체) 안에 들어가는 모든 섹션 레이아웃 설정 */
         #intro, .section, #end{
-            /* display: inline-block; */
+            display: inline-block;
             flex: 0 0 auto;
             text-align: center;
-
-
             width: 100%; height: 100%;
-
-            /* 마우스 스크롤하게 하려면 자바스크립트 사용해야함 */
         }
 
 
@@ -78,10 +74,26 @@
     </style>
 </head>
 <body>
-    <!-- 자바스크립트 불러오기 -->
-    <!-- <script src="Javascript/horizontalScroll.js"></script> -->
+    <script src="Javascript/horizontalScroll.js"></script>
+
     
-    <div id="scroll-indicator">
+    <div id="nav">
+        <!-- <div class="icon-box">
+            <div class="side-text">Home</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div>
+        <div class="icon-box">
+            <div class="side-text">DreamCatcher</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div>
+        <div class="icon-box">
+            <div class="side-text">Rain Cat</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div>
+        <div class="icon-box">
+            <div class="side-text">Little Prince</div>
+            <div class="icon"><img src="Images/shortcut.png" title="To intro"></div>
+        </div> -->
         <div class="shortcut"><a href="#intro"><img src="Images/shortcut.png" title="To intro"></a></div>
         <div class="shortcut"><a href="#first"><img src="Images/shortcut.png" title="First"></a></div>
         <div class="shortcut"><a href="#second"><img src="Images/shortcut.png" title="Second"></a></div>

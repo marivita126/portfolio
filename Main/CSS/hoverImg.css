@@ -1,0 +1,14 @@
+/* 섹션별 이미지 호버*/
+.topImg{
+    position: relative;
+}
+.hoverImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+.hoverImg:hover{
+    opacity: 1;
+}
