@@ -5,54 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DreamCatcher</title>
+<link rel="stylesheet" href="/Main/CSS/font-face.css">
 <link rel="stylesheet" href="CSS/sub-default.css">
 <link rel="stylesheet" href="CSS/home-link.css">
+<link rel="stylesheet" href="CSS/sub-01.css">
+<link rel="stylesheet" href="CSS/lightbox.css">
 <style>
-
-  .navigation{
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-  }
-
-  .nav_link{
-    display: block;
-    background-color: rgba(0, 0, 0, 0.881);
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.1rem;
-
-    padding: 8px 20px;
-    width:100%
-  }
-
-  .nav_link:hover{
-    transition: background-color 0.5s;
-    background-color: rgba(0, 0, 0, 0.966);
-    color: white;
-  }
-
   .container p{
     font-size: 1.2rem;
   }
   
-  .container span{
-    font-weight: bold;
-    color: navy;
-  }
 
-
-  .side{
-    background-color: lightgrey;
-
-    width: 30%;
-    height: 1650px;
-    padding: 20px;
-  }
-
-  /* Main column on the right, 70% width, padding 20px */
   .main{
     float: right;
     width: 70%;
@@ -74,41 +37,95 @@
   }
   </style>
 </head>
+
 <body>
   <div class="navigation">
-      <div class="nav_link">Link1</div>
-      <div class="nav_link">Link2</div>
-      <div class="nav_link">Link3</div>
-      <div class="nav_link">Link4</div>
+    <div class="nav_link">Link1</div>
+    <div class="nav_link">Link2</div>
+    <div class="nav_link">Link3</div>
+    <div class="nav_link">Link4</div>
   </div>
 
   <div id="home"><a href="../Main/Main.html">Home</a></div>
 
 
   <div class="container">
-      <div class="first">
-        <h2>Heading 2</h2>
-        <h5>Title description</h5>
-        <!--external source image from internet, set width 100%-->
-        <div class="img1">
-          <img src="https://storage.googleapis.com/oceanwide_web/media-dynamic/cache/widen_1600/media/default/0001/05/30627f237982b80399f5d2db0c8daeeea38a5950.jpeg"
-          title="Image 1">
-        </div>
-        
-        <p>Some text qui <span>officia deserunt mollit</span> anim..</p> 
-        <!--some bold navy text inside p, doesn't matter which texts-->
+    
+    <div class="section_01">
+      <div class="title"><img src="/Sub/Images/01/01-title.png"></div>s
+    </div>
+
+    </div>
+
+    <div class="section_02">
+      <button><a href="#">다운로드 페이지</a></button> <br><br>
+
+      <div class="text">
+        2021년 2022년 3월까지 진행했던 팀 게임개발 프로젝트. <br>
+        게임의 장르는 텍스트 어드벤쳐 게임으로,<br> 꿈과 현실 사이에서 갈등하는 대학생의 이야기를 그린다.<br>
+        아트로 참여하여 주로 배경 삽화를 맡았고, 그 외에도 전반적인 게임의 그래픽에 참여했다.
       </div>
-      <div class="second">
-        <h3>More Text</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <!--external source image from internet, set width 100%-->
-        <div class="img2">
-          <img src="https://www.cabq.gov/artsculture/biopark/news/10-cool-facts-about-penguins/@@images/1a36b305-412d-405e-a38b-0947ce6709ba.jpeg"
-          title="Image 2">
+      
+    </div>
+
+    <div class="section_03">
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column"><img src="/Sub/Images/01/03-img1.png" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+        <div class="column"><img src="/Sub/Images/01/03-img2.png" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+        <div class="column"><img src="/Sub/Images/01/03-img3.png" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+        <div class="column"><img src="/Sub/Images/01/03-img4.png" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+        <div class="column"><img src="/Sub/Images/01/03-img5.png" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="/Sub/Images/01/03-img1.png" style="width:100%">
+            <div class="caption-container"><p id="caption">마트 창고</p></div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="/Sub/Images/01/03-img2.png" style="width:100%">
+            <div class="caption-container"><p id="caption">주인공 방</p></div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="/Sub/Images/01/03-img3.png" style="width:100%">
+            <div class="caption-container"><p id="caption">동아리방</p></div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="/Sub/Images/01/03-img4.png" style="width:100%">
+            <div class="caption-container"><p id="caption">고깃집</p></div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="/Sub/Images/01/03-img5.png" style="width:100%">
+            <div class="caption-container"><p id="caption">꿈 속</p></div>
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
+    </div>
+
+    <div class="section_04">
+
+    </div>
+
   </div>
   
   <div class="footer"><h2>Footer</h2></div>
+
+
+
+  <script src="Javascript/lightbox.js"></script>
+
 </body>
 </html>

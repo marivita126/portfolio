@@ -1,0 +1,30 @@
+
+.nav_link:hover{
+    transition: background-color 0.5s;
+    background-color: rgba(255, 209, 149, 0.954);
+    color: rgb(0, 0, 0);
+}
+
+
+/* .title{text-align: center;} */
+.section_01 .title img{
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_01{
+    background-image: url('/Sub/Images/01/01-img1.png');
+
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+.section_02{
+    padding: 50px 50px 150px 50px;
+}

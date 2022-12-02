@@ -51,7 +51,8 @@
 
 
         /* 패딩 설정 */
-        #intro, #end{padding: 185px 300px;}
+        #intro{padding: 185px 300px;}
+        #end{padding: 150px 300px;}
         .section{padding: 150px 350px;}
 
 
@@ -120,23 +121,23 @@
         </div> -->
 
         <div class="shortcut">
-            <div class="navTag"><img src="Images/tag_Home.png"></div>
+            <div class="hide"><img src="Images/tag_Home.png"></div>
             <div class="navImg"><a href="#intro"><img src="Images/shortcut.png" title="To intro"></a></div>
         </div>
         <div class="shortcut">
-            <div class="navTag tag_2"><img src="Images/tag_DreamCatcher.png"></div>
+            <div class="hide"><img src="Images/tag_DreamCatcher.png"></div>
             <div class="navImg"><a href="#first"><img src="Images/shortcut.png" title="First"></a> </div>
         </div>
         <div class="shortcut">
-            <div class="navTag"><img src="Images/tag_RainCat.png"></div>
+            <div class="hide"><img src="Images/tag_RainCat.png"></div>
             <div class="navImg"><a href="#second"><img src="Images/shortcut.png" title="Second"></a></div>
         </div>
         <div class="shortcut">
-            <div class="navTag"><img src="Images/tag_LittlePrince.png"></div>
+            <div class="hide"><img src="Images/tag_LittlePrince.png"></div>
             <div class="navImg"><a href="#third"><img src="Images/shortcut.png" title="Third"></a></div>
         </div>
         <div class="shortcut">
-            <div class="navTag"><img src="Images/tag_Contact.png"></div>
+            <div class="hide"><img src="Images/tag_Contact.png"></div>
             <div class="navImg"><a href="#end"><img src="Images/shortcut.png" title="End"></a></div>
         </div>
     </div>
@@ -181,13 +182,18 @@
             <div class="title">CONTACT <br><br></div>
             
             <div class="text">FOLLOW ME ON <span><a href="https://www.instagram.com/yeee_records/">INSTAGRAM</a></span></div>
-            <div class="text">Send me an email</div>
+            <div class="text">SEND ME AN <span><button onclick="emailAlertFunc()" class="emailBtn">EMAIL</button></span></div>
+
+            <div class="text">CHECK OUT MORE WORKS <span><a href="#">HERE</a></span></div>
         </div>
+
+        
 
     </div>
 
 
     <script src="Javascript/horizontalScroll.js"></script>
+    <script src="Javascript/email-alert.js"></script>
 
 </body>
 </html>

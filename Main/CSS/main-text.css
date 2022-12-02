@@ -1,10 +1,19 @@
 .sectionText{color:rgb(56, 56, 176);}
 
+.title, .text{margin: 10px;}
 
-
-#end{line-height: 250%;}
+#end{line-height: 230%;}
 #end .title{font-size: 3rem; font-weight: bold; padding: 10px 0px;}
 #end .text{font-size: 1.5rem;}
 
-span:hover{color: blue; font-weight: bold; font-size: 2rem; padding: 10px 0px;}
+
+.emailBtn{
+    border: none;
+    font-family: 'S-CoreDream-3Light';
+    background-color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: inline-block;
+}
+span a:hover, .emailBtn:hover{color: rgb(101, 142, 227); font-weight: bold; font-size: 1.5rem;}
 a:link, a:visited{text-decoration: none; color: black;}

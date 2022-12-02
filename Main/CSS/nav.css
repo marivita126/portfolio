@@ -9,8 +9,12 @@
 .shortcut{text-align: center;}
 
 .navImg img{width: 10%;}
-.navTag img{width: 45%;}
+.hide img{width: 45%;}
 
-.navTag{opacity: 0.1;}
 .navImg:hover{opacity: 0.5;}
-.navImg:hover + .navTag{opacity: 1;}
+
+
+/* 도대체 왜 안될까 ㅎㅎ */
+.hide{display: none;}
+.navImg:hover + .hide{display: block;}
+/* .navImg:hover + .hide{display: block;} */
