@@ -1,0 +1,10 @@
+.sectionText{color:rgb(56, 56, 176);}
+
+
+
+#end{line-height: 250%;}
+#end .title{font-size: 3rem; font-weight: bold; padding: 10px 0px;}
+#end .text{font-size: 1.5rem;}
+
+span:hover{color: blue; font-weight: bold; font-size: 2rem; padding: 10px 0px;}
+a:link, a:visited{text-decoration: none; color: black;}

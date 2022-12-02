@@ -1,7 +1,8 @@
 
-const wrapper = document.querySelector('#wrapper');
 
-wrapper.addEventListener('wheel', (e)=> {
-    e.preventDefault();
-    wrapper.scrollLeft += e.deltaY;
-})
+const scrollContainer = document.querySelector("wrapper");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+});
