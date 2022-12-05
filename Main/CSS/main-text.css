@@ -5,9 +5,7 @@
 #end{line-height: 230%;}
 #end .title{font-size: 3rem; font-weight: bold; padding: 10px 0px;}
 #end .text{font-size: 1.5rem;}
-
-
-.emailBtn{
+#end .emailBtn{
     border: none;
     font-family: 'S-CoreDream-3Light';
     background-color: inherit;
@@ -15,5 +13,5 @@
     cursor: pointer;
     display: inline-block;
 }
-span a:hover, .emailBtn:hover{color: rgb(101, 142, 227); font-weight: bold; font-size: 1.5rem;}
-a:link, a:visited{text-decoration: none; color: black;}
+#end span a:hover, #end .emailBtn:hover{color: rgb(101, 142, 227); font-weight: bold; font-size: 1.5rem;}
+#end a:link, #end a:visited{text-decoration: none; color: black;}

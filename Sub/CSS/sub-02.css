@@ -1,7 +1,7 @@
 .nav_link{
     display: block;
-    background-color: rgba(0, 0, 0, 0.881);
-    color: white;
+    background-color: rgba(7, 7, 26, 0.881);
+    color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
     font-size: 0.9rem;
@@ -9,12 +9,12 @@
     padding: 8px 20px;
     width:100%
 }
-
 .nav_link:hover{
     transition: background-color 0.5s;
-    background-color: rgba(255, 209, 149, 0.954);
+    background-color: rgba(101, 196, 255, 0.973);
     color: rgb(0, 0, 0);
 }
+
 
 #home{
     position: fixed;
@@ -27,7 +27,7 @@
 .icon{
     color: white;
 }
-.icon:hover{color: rgb(255, 217, 157);}
+.icon:hover{color: rgb(157, 216, 255);}
 
 
 /* .title{text-align: center;} */
@@ -38,7 +38,7 @@
 }
 
 .section_01{
-    background-image: url('/Sub/Images/01/01-img1.png');
+    background-image: url('/Sub/Images/02/01-img1.png');
 
     height: 100%; 
 

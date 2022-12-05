@@ -1,20 +1,64 @@
-#nav{
+#mainNav{
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     display: flex;
     width: 100%;
     justify-content: space-around; 
 }
 
-.shortcut{text-align: center;}
+/* .nav-link{
+    padding-left: auto;
+    padding-right: auto;
+} */
+
+/* #mainNav{
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
+}
+
+.nav-link{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.navText{
+    padding: 14px 14px;
+    font-size: 0rem;
+    background-color: rgb(101, 142, 227);
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.navText a{color: white; text-decoration: none;}
+.navText:hover{
+    padding: 5px 12px;
+    font-size: 0.9rem;
+} */
+
+/* .shortcut{text-align: center;}
 
 .navImg img{width: 10%;}
 .hide img{width: 45%;}
 
-.navImg:hover{opacity: 0.5;}
+.navImg:hover{opacity: 0.5;} */
 
 
 /* 도대체 왜 안될까 ㅎㅎ */
-.hide{display: none;}
-.navImg:hover + .hide{display: block;}
+/* .hide{display: none;}
+.navImg:hover + .hide{display: block;} */
 /* .navImg:hover + .hide{display: block;} */
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+.navText:hover + .hide{
+    display: block;
+    color: red;
+}

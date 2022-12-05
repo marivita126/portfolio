@@ -9,12 +9,12 @@
 }
 
 .section_03 .row .column img{
-  width: 80%;
+  width: 98%;
 }
 
 
 /* Create four equal columns that floats next to eachother */
-.row{margin-left: 50px;}
+.row{margin-left: 10px;}
 .column {
   float: left;
   width: 20%;
