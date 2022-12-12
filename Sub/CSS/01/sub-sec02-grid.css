@@ -1,0 +1,17 @@
+.sec02-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.grid-item, .grid-item1{
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid-item1{
+    grid-column: 1/5;/* item1은 column1에서 시작 & column 5 이전에 끝날 것이라는 뜻*/
+}

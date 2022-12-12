@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'S-CoreDream-3Light';
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+.text{font-size: 0.85rem;}
+
+#home{
+    position: fixed;
+    top: 10px; right: 10px;
+    text-align: center;
+    padding: 10px 11px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.icon{
+    color: white;
+}
+
+
+#intro{
+    height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+#intro .title img{
+    width:40%;
+}
+
+
+
+.footer {
+    padding: 17px;
+    text-align: center;
+    font-size: 0.5rem;
+    font-style: italic;
+}
+
+/* navigation */
+/* .navigation{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    
+} */
+/* nav link hover는 개별 그거에 */
+
+

@@ -4,10 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Main/CSS/font-face.css">
+    <link rel="stylesheet" href="Main/CSS/hoverImg.css">
+    <link rel="stylesheet" href="Main/CSS/nav.css">
+    <link rel="stylesheet" href="Main/CSS/main-text.css">
+    <title>Main Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-family: 'S-CoreDream-3Light';
+            font-size: 16px;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+
+        #wrapper{
+            background-color: skyblue;
+            /* width: 100%;
+            height: 100%; */
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+
+
+
+
+
+        #intro, .section, #end{
+            display: inline-block;
+            flex: 0 0 auto;
+            width: 100vw; height: 100vh;
+        }
+        #intro, .section{text-align: center;}
+        #end{text-align: left;}
+
+
+        /* 패딩 설정 */
+        #intro{padding: 215px 300px;}
+        #end{padding: 150px 300px;}
+        .section{padding: 150px 350px;}
+
+
+
+        /* 모든 이미지 크기 조절 */
+        .mainImg img{
+            width: 100%;
+            height: 100%;
+        }
+        .topImg img, .hoverImg img{
+            width: 100%;
+            height: 98.8%;
+        }
+
+        /* 섹션별 색 지정 */
+        /* #intro, #end{background-color: rgb(255, 242, 218); border: 9px solid white;} */
+        #intro, #end{background-color: rgb(255, 255, 255);}
+        .section{background-color: rgb(255, 255, 255);}
+
+
+    </style>
 </head>
 <body>
-    <a href="Main/Main.html">Main으로</a>
-    <a href="Sub/01.html">서브로</a>
+
+
+    
+    <div id="mainNav">
+        <div class="nav-link">
+            <div class="hoverNav"><a href="#intro"><img src="/Main/Images/shortcut.png"></a></div>
+            <div class="hideNav"><img src="/Main/Images/tag_Home.png"></div>
+        </div>
+        <div class="nav-link">
+            <div class="hoverNav"><a href="#page-01"><img src="/Main/Images/shortcut.png"></a></div>
+            <div class="hideNav"><img src="/Main/Images/tag_DreamCatcher.png"></div>
+        </div>
+        <div class="nav-link">
+            <div class="hoverNav"><a href="#page-02"><img src="/Main/Images/shortcut.png"></a></div>
+            <div class="hideNav"><img src="/Main/Images/tag_RainCat.png"></div>
+        </div>
+        <div class="nav-link">
+            <div class="hoverNav"><a href="#page-03"><img src="/Main/Images/shortcut.png"></a></div>
+            <div class="hideNav"><img src="/Main/Images/tag_LittlePrince.png"></div>
+        </div>
+        <div class="nav-link">
+            <div class="hoverNav"><a href="#end"><img src="/Main/Images/shortcut.png"></a></div>
+            <div class="hideNav"><img src="/Main/Images/tag_Contact.png"></div>
+        </div>
+        <!-- <div class="nav-link">
+            <div class="navText"><a href="#intro">Home</a></div>
+        </div>
+        <div class="nav-link">
+            <div class="navText"><a href="#page-01">Dreamcatcher</a></div>
+        </div>
+        <div class="nav-link">
+            <div class="navText"><a href="#page-02">Rain Cat</a></div>
+        </div>
+        <div class="nav-link">
+            <div class="navText"><a href="#page-03">Little Prince</a></div>
+        </div>
+        <div class="nav-link">
+            <div class="navText"><a href="#end">Contact</a></div>
+        </div> -->
+
+        <!-- <div class="nav-link">
+            <div class="hide">I h.</div>
+            <div class="navText">asd</div>
+        </div> -->
+    
+    </div>
+
+
+
+
+    <div id="wrapper">
+        <div id="intro">
+            <div class="mainImg">
+                <img src="Main/Images/mainPage_name.png" title="name">
+            </div>
+        </div>
+
+        <div id="page-01" class="section">
+            <div class="topImg" >
+                <img src="Main/Images/page1_1.png" title="DreamCatcher">
+                <a href="Sub/01.html"><img class="hoverImg" src="Main/Images/page1_2.png"></a>
+            </div>
+            <div class="sectionText">#첫_게임개발_프로젝트 #배경_원화 #UIUX</div>
+        </div>
+
+        <div id="page-02" class="section">
+            <div class="topImg" >
+                <img src="Main/Images/page2_1.png" title="DreamCatcher">
+                <a href="Sub/02.html"><img class="hoverImg" src="Main/Images/page2_2.png"></a>
+            </div>
+
+            <div class="sectionText">#개인_프로젝트 #1인_게임개발</div>
+        </div>
+
+        <div id="page-03" class="section">
+            <div class="topImg" >
+                <img src="Main/Images/page3_1.png" title="Little Prince: Immersive Space">
+                <a href="Sub/03.html"><img class="hoverImg" src="Main/Images/page3_2.png"></a>
+            </div>
+
+            <div class="sectionText">#팀_프로젝트 #가상공간 #프로그래밍</div>
+        </div>
+
+        <div id="end">
+            <div class="title">CONTACT <br><br></div>
+            <div class="text">FOLLOW ME ON <span><a href="https://www.instagram.com/yeee_records/">INSTAGRAM</a></span></div>
+            <div class="text">SEND ME AN <span><button onclick="emailAlertFunc()" class="emailBtn">EMAIL</button></span></div>
+            <!-- <div class="text">CHECK OUT MORE WORKS <span><a href="#">HERE</a></span></div> -->
+        </div>
+
+        
+
+    </div>
+
+
+    <script src="Javascript/horizontalScroll.js"></script>
+    <script src="Javascript/email-alert.js"></script>
+
 </body>
 </html>

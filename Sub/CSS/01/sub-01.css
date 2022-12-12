@@ -1,0 +1,59 @@
+/* .nav_link{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.881);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    padding: 8px 20px;
+    width:100%
+} */
+
+/* .nav_link:hover{
+    transition: background-color 0.5s;
+    background-color: rgba(255, 209, 149, 0.954);
+    color: rgb(0, 0, 0);
+} */
+
+
+.icon:hover{color: rgb(255, 217, 157);}
+
+
+/* 인트로 배경 */
+#intro{
+    background-image: url('/Sub/Images/01/intro-img1.png');
+}
+
+
+
+
+.toggleBtn{
+    background-color: rgb(255, 235, 169);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.downloadBtn{
+    border: white 1px solid;
+    background-color: rgb(20, 20, 20);
+}
+.downloadBtn a{color: rgb(255, 255, 255);}
+.downloadBtn:hover{
+    border: rgb(255, 235, 169) 1px solid;
+}
+.downloadBtn a:hover{color: rgb(255, 235, 169)}
+
+
+
+
+.playVid{padding: 50px 0px; text-align: left; width: 100%;}
+
+
+.footer {
+    background: rgba(0, 0, 0, 0.918);
+    color: grey;
+}

@@ -6,8 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DreamCatcher</title>
 <link rel="stylesheet" href="/Main/CSS/font-face.css">
-<link rel="stylesheet" href="CSS/sub-default.css">
-<link rel="stylesheet" href="CSS/sub-01.css">
+<link rel="stylesheet" href="CSS/01/sub-01.css">
+<link rel="stylesheet" href="CSS/01/sub-01-spacing.css">
+<link rel="stylesheet" href="CSS/01/sub-sec02-grid.css">
+<link rel="stylesheet" href="CSS/Default/sub-default.css">
+<link rel="stylesheet" href="CSS/Default/sub-btn.css">
 <link rel="stylesheet" href="CSS/lightbox.css">
 <script src="https://kit.fontawesome.com/08b4675900.js" crossorigin="anonymous"></script>
 <style>
@@ -15,23 +18,15 @@
     background-color: rgb(33, 33, 33);
     color: white;
   }
-  /* Footer */
-  .footer {
-    clear: both;
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    /*font size is 1.5 times html font-size*/
-  }
   </style>
 </head>
 
 <body>
-  <div class="navigation">
-    <div class="nav_link">소개</div>
+  <!-- <div class="navigation">
+    <div class="nav_link"><a href="#">소개</a></div>
     <div class="nav_link">작업물</div>
     <div class="nav_link">작업 과정</div>
-  </div>
+  </div> -->
 
   <div id="home"><a href="../Main/Main.html">
     <div class="icon"><i class="fa-solid fa-house"></i></div>
@@ -40,87 +35,117 @@
 
   <div class="container">
     
-    <div class="section_01">
-      <div class="title"><img src="/Sub/Images/01/01-title.png"></div>
+    <div id="intro">
+      <div class="title"><img src="/Sub/Images/01/intro-title.png"></div>
     </div>
 
+    <div class="text" style="font-style: italic; font-size: 1.2rem; color:rgba(255, 255, 255, 0.436); text-align: right; padding: 20px 20px 0px 0px;">
+      #배경 #배경삽화 #UIUX
     </div>
 
-    <div class="section_02">
-      <div class="text" style="font-style: italic; font-size: 1.2rem; color:rgba(255, 255, 255, 0.436)">
-        #배경 #배경삽화 #UIUX<br><br><br>
-      </div>
 
-      <button class="downloadBtn"><a href="https://play.google.com/store/apps/details?id=com.STG_Z.DreamCatcher" target="_blank">다운로드 페이지</a></button> <br><br>
+    <div class="toggle toggle01" >
+      <button class="toggleBtn" onclick="hide_and_show_sec1()">#소개</button>
 
-      <div class="text">
-        게임개발연합동아리 GameMakers 5기로 활동했던 당시 참여했던 팀 게임개발 프로젝트.
-        2021년 2월 20일부터 2022년 3월 9일 출시까지 진행되었으며, 출시 기준 팀원은 4명이었다.<br>
-        프로그래머 두 명, 기획 한 명, 그리고 그래픽 한 명으로 구성됐었다. 게임의 장르는 텍스트 어드벤쳐 게임으로, 꿈과 현실 사이에서 갈등하는 대학생의 이야기를 그린다.
-        그래픽으로 참여하여 초반부에는 주로 배경 삽화를 맡았고, 후반부에 팀원이 줄어듦에 따라 UIUX를 포함한 전반적인 게임 그래픽을 맡았다.
-      </div>
+      <div id="section01" class="section">
 
-      <div class="playVid">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hC1-DHF_040"
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <div class="text" style="font-style:italic; color: rgb(118, 118, 118);">
-          게임 플레이 및 기능 설명 영상
+        <div class="text">
+          asdas게임개발연합동아리 GameMakers 5기로 활동했던 당시 참여했던 팀 게임개발 프로젝트.
+          2021년 2월 20일부터 2022년 3월 9일 출시까지 진행되었으며,<br> 출시 기준 팀원은 4명이었다.
+          프로그래머 두 명, 기획 한 명, 그리고 그래픽 한 명으로 구성됐었다. 게임의 장르는 텍스트 어드벤쳐 게임으로,
+          <br>꿈과 현실 사이에서 갈등하는 대학생의 이야기를 그린다. 그래픽으로 참여하여 초반부에는 주로 배경 삽화를
+          맡았고, <br>후반부에 팀원이 줄어듦에 따라 UIUX를 포함한 전반적인 게임 그래픽을 맡았다.
         </div>
-      </div>
-      
-    </div>
 
-    <div class="section_03">
-      <!-- Images used to open the lightbox -->
-      <div class="row">
-        <div class="column"><img src="/Sub/Images/01/03-img1.png" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
-        <div class="column"><img src="/Sub/Images/01/03-img2.png" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
-        <div class="column"><img src="/Sub/Images/01/03-img3.png" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
-        <div class="column"><img src="/Sub/Images/01/03-img4.png" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
-        <div class="column"><img src="/Sub/Images/01/03-img5.png" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
-      </div>
+        <button class="downloadBtn"><a href="https://play.google.com/store/apps/details?id=com.STG_Z.DreamCatcher" target="_blank">DOWNLOAD</a></button> <br><br>
 
-      <!-- The Modal/Lightbox -->
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-          <div class="mySlides">
-            <div class="numbertext">1 / 5</div>
-            <img src="/Sub/Images/01/03-img1.png" style="width:100%">
-            <div class="caption-container"><p id="caption">마트 창고</p></div>
+        <div class="playVid">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hC1-DHF_040"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="text" style="font-style:italic; color: rgb(118, 118, 118);">
+            게임 플레이 및 기능 설명 영상
           </div>
-          <div class="mySlides">
-            <div class="numbertext">2 / 5</div>
-            <img src="/Sub/Images/01/03-img2.png" style="width:100%">
-            <div class="caption-container"><p id="caption">주인공 방</p></div>
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">3 / 5</div>
-            <img src="/Sub/Images/01/03-img3.png" style="width:100%">
-            <div class="caption-container"><p id="caption">동아리방</p></div>
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">4 / 5</div>
-            <img src="/Sub/Images/01/03-img4.png" style="width:100%">
-            <div class="caption-container"><p id="caption">고깃집</p></div>
-          </div>
-          <div class="mySlides">
-            <div class="numbertext">5 / 5</div>
-            <img src="/Sub/Images/01/03-img5.png" style="width:100%">
-            <div class="caption-container"><p id="caption">메인 화면 일러스트</p></div>
-          </div>
-
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
       </div>
-    </div>
-
-    <div class="section_04">
 
     </div>
+
+
+    <div class="toggle toggle02">
+      <button class="toggleBtn" onclick="hide_and_show_sec2()">#작업물</button>
+
+      <div id="section02" class="section">
+        <!-- Lightbox -->
+        <div class="row">
+          <div class="column"><img src="/Sub/Images/01/02-img1.png" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+          <div class="column"><img src="/Sub/Images/01/02-img2.png" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+          <div class="column"><img src="/Sub/Images/01/02-img3.png" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+          <div class="column"><img src="/Sub/Images/01/02-img4.png" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+          <div class="column"><img src="/Sub/Images/01/02-img5.png" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 5</div>
+              <img src="/Sub/Images/01/03-img1.png" style="width:100%">
+              <div class="caption-container"><p id="caption">마트 창고</p></div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 5</div>
+              <img src="/Sub/Images/01/03-img2.png" style="width:100%">
+              <div class="caption-container"><p id="caption">주인공 방</p></div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 5</div>
+              <img src="/Sub/Images/01/03-img3.png" style="width:100%">
+              <div class="caption-container"><p id="caption">동아리방</p></div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="/Sub/Images/01/03-img4.png" style="width:100%">
+              <div class="caption-container"><p id="caption">고깃집</p></div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="/Sub/Images/01/03-img5.png" style="width:100%">
+              <div class="caption-container"><p id="caption">메인 화면 일러스트</p></div>
+            </div>
+  
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="sec02-grid"> <!-- 원래 container -->
+          <div class="grid-item1">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item">9</div>
+          <div class="grid-item">10</div>
+          <div class="grid-item">11</div>
+          <div class="grid-item">12</div>
+          <div class="grid-item">13</div>
+          <div class="grid-item">14</div>
+          <div class="grid-item">15</div>
+      </div>
+
+      </div>
+
+    </div>
+
+
+    
+
 
   </div>
   
@@ -129,6 +154,7 @@
 
 
   <script src="Javascript/lightbox.js"></script>
+  <script src="Javascript/hide-and-show.js"></script>
 
 </body>
 </html>

@@ -1,10 +1,50 @@
 #mainNav{
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     display: flex;
     width: 100%;
     justify-content: space-around; 
 }
+
+.nav-link{
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+}
+
+
+.hoverNav{
+    position: fixed;
+    width: 18.5vw;
+    height: 7vh;
+    bottom: 0px;
+    /* padding: 5px; */
+}
+.hoverNav img{width: 10%;}
+/* .hideNav{bottom: 100px;} */
+.hideNav img{
+    width: 50%;
+    text-align: center;
+}
+
+
+.hideNav{
+    display: none;
+}
+.hoverNav:hover + .hideNav{
+    display: block;
+}
+
+/* .hide {
+    display: none;
+}
+
+.navText:hover + .hide{
+    display: block;
+    color: red;
+} */
 
 /* .nav-link{
     padding-left: auto;
@@ -54,11 +94,3 @@
 
 
 
-.hide {
-    display: none;
-}
-
-.navText:hover + .hide{
-    display: block;
-    color: red;
-}
